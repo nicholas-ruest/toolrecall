@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "dream.factory.v1",
+  "date": "2026-10-05",
+  "coreMemory": {
+    "commit": "515c6445e28e75d33ebe75f34ea3e8f3a31a2361",
+    "files": {
+      "AGENTS.md": "4afe6f9008076140486d2a1e5424ddc6e40a0671",
+      "CLAUDE.md": "0178167276c981ff0ba503e2e564eee8d347e3f7",
+      "docs/architecture-overview.md": "8ba7f76674e59555dbcd5f971554884c54085944",
+      "docs/adr/006-storage-acl-boundaries.md": "9a8bdfe08dd41abc4402ab46a4ad359356815b6e",
+      "docs/adr/010-benchmark-promotion.md": "15e782267153e3d4251bf7fc196763de83b9669b",
+      "docs/adr/012-trust-root-rvf.md": "a550f0a481ca0804ceb6a4a442653cc0179dcda7",
+      "docs/ddd/context-map.md": "ddda3371b416dc7394b15957451fc3a829a9fe21",
+      "docs/ddd/governance.md": "2c1e98630374c966699c5a808305daa6718b4cfc",
+      "docs/ddd/memory.md": "b00275577f9ee60b192b4aa2712632f2e2439ef7"
+    },
+    "appliedDecisions": [
+      "Bind consequential claims to immutable source commits.",
+      "Treat Ruflo as coordination/provenance, never implementation execution.",
+      "Use typed fail-loud ports and preserve one-writer ownership.",
+      "Use RuVector as the single intelligence-memory adapter and append-only RVF witnesses.",
+      "Keep Darwin and Flywheel advisory with authority none and no self-promotion."
+    ]
+  },
+  "research": {
+    "frontier": [
+      {
+        "date": "2026-08-17",
+        "organization": "University of Manchester NLP",
+        "title": "When Tool-Backed Skill Retrieval Fails: Source-Style Collapse in Executable Capability Retrieval",
+        "primarySource": true,
+        "url": "https://arxiv.org/abs/2608.16502"
+      },
+      {
+        "date": "2026-08-30",
+        "organization": "Agentic Skills Systems Authors",
+        "title": "Towards a Systems Foundation for Agentic Skills",
+        "primarySource": true,
+        "url": "https://arxiv.org/abs/2608.29596"
+      },
+      {
+        "date": "2026-09-28",
+        "organization": "University of Cyprus AgentWare",
+        "title": "AgentWare: Automating the Lifecycle of Agentic Applications across the Edge-to-Cloud Continuum",
+        "primarySource": true,
+        "url": "https://arxiv.org/abs/2609.34586"
+      }
+    ],
+    "enterprise": [
+      {
+        "date": "2026-10-05",
+        "organization": "OpenAI",
+        "title": "OpenAI Agents SDK deferred function tools",
+        "primarySource": true,
+        "url": "https://github.com/openai/openai-agents-python/commit/d7e52c375021248973f60ccbea8e7b69bc5b16e3",
+        "commit": "d7e52c375021248973f60ccbea8e7b69bc5b16e3",
+        "license": "MIT",
+        "codeInspected": true
+      },
+      {
+        "date": "2026-10-05",
+        "organization": "Model Context Protocol",
+        "title": "Official MCP Rust SDK 3.5.1 source",
+        "primarySource": true,
+        "url": "https://github.com/modelcontextprotocol/rust-sdk/commit/79437f291b2c44053d00dcd5db969fd0cca7c887",
+        "commit": "79437f291b2c44053d00dcd5db969fd0cca7c887",
+        "license": "Apache-2.0",
+        "codeInspected": true
+      },
+      {
+        "date": "2026-10-02",
+        "organization": "NVIDIA",
+        "title": "NVIDIA Skills live capability catalog",
+        "primarySource": true,
+        "url": "https://github.com/NVIDIA/skills/commit/0e0d506f4eb67204a62586ac5f19df3cb7ad9b1f",
+        "commit": "0e0d506f4eb67204a62586ac5f19df3cb7ad9b1f",
+        "license": "CC-BY-4.0 AND Apache-2.0",
+        "codeInspected": true
+      }
+    ]
+  },
+  "project": {
+    "kind": "new-project",
+    "name": "ToolRecall",
+    "thesis": "A source-aware recall firewall prevents global deferred-tool retrieval from silently collapsing required tool sources before planning.",
+    "repository": "https://github.com/nicholas-ruest/toolrecall",
+    "commit": "910bd04097d228ca2bb83511f78f4fedc2b1cffe",
+    "readBackCommit": "910bd04097d228ca2bb83511f78f4fedc2b1cffe",
+    "ingredients": [
+      {"owner":"ruvnet","component":"RuVector","commit":"5a93328f2fceb0307c25929ed38cd7a0911fdf00","license":"Apache-2.0","integrationExecuted":true},
+      {"owner":"ruvnet","component":"RVF","commit":"5a93328f2fceb0307c25929ed38cd7a0911fdf00","license":"Apache-2.0","integrationExecuted":true},
+      {"owner":"openai","component":"OpenAI Agents SDK","commit":"d7e52c375021248973f60ccbea8e7b69bc5b16e3","license":"MIT","enterprise":true,"integrationExecuted":true},
+      {"owner":"modelcontextprotocol","component":"MCP Rust SDK","commit":"79437f291b2c44053d00dcd5db969fd0cca7c887","license":"Apache-2.0","enterprise":true,"integrationExecuted":true}
+    ]
+  },
+  "commands": {
+    "fmt": {"executed":true,"exitCode":0,"commit":"910bd04097d228ca2bb83511f78f4fedc2b1cffe"},
+    "clippy": {"executed":true,"exitCode":0,"commit":"910bd04097d228ca2bb83511f78f4fedc2b1cffe"},
+    "test": {"executed":true,"exitCode":0,"commit":"910bd04097d228ca2bb83511f78f4fedc2b1cffe"},
+    "security": {"executed":true,"exitCode":0,"commit":"910bd04097d228ca2bb83511f78f4fedc2b1cffe"},
+    "integration": {"executed":true,"exitCode":0,"commit":"910bd04097d228ca2bb83511f78f4fedc2b1cffe"},
+    "benchmark": {"executed":true,"exitCode":0,"commit":"910bd04097d228ca2bb83511f78f4fedc2b1cffe"}
+  },
+  "evaluators": {
+    "metaharness": {"executed":true,"exitCode":0,"upstreamCommit":"9ce8b8dd89045c3b9a1f809ae58f3589029db4a4","mock":false},
+    "darwin": {"executed":true,"exitCode":0,"upstreamCommit":"9ce8b8dd89045c3b9a1f809ae58f3589029db4a4","mock":false},
+    "flywheel": {"executed":true,"exitCode":0,"upstreamCommit":"9ce8b8dd89045c3b9a1f809ae58f3589029db4a4","mock":false}
+  },
+  "gists": {},
+  "evidence": [
+    {"path":"commands.tsv","sha256":"b701df82f7ae55f55e004a32b13298386f0411475b1289c62d45eda288710a3f"},
+    {"path":"benchmark.json","sha256":"742c30c328147af7238172d34d74bc60fdb46d2ec68a07b4be77d8fb3747911a"},
+    {"path":"vertical-slice.json","sha256":"ea462ee5909b4d8530dfb5f8f5ff986ab00967b257579480467b8340aa187ca2"},
+    {"path":"evaluators.json","sha256":"c3bb8231712e7aead5036a19b2ee88526178d4b1e8a3ce25ca526b274b1b58d6"}
+  ]
+}
