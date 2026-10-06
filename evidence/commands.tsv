@@ -1,0 +1,9 @@
+stage	commit	exit	result	transcript
+fmt	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	cargo fmt --all -- --check	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-021753.log
+clippy	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	cargo clippy --workspace --all-targets --all-features --locked -- -D warnings	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-021753.log
+test	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	cargo test --workspace --all-targets --all-features --locked; 4 passed, 0 failed	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-021851.log
+security	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	cargo deny check; advisories/bans/licenses/sources ok; unmatched allowance warning only	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-021851.log
+integration	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	OpenAI deferred tools -> MCP validation -> RuVector readback -> RVF witness	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-021934.log
+benchmark	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	cargo run --locked -p toolrecall-evaluation --bin toolrecall-benchmark -- --json	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-021954.log
+darwin	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	winner g1_v0; primary 0.9600; delta +0.0033	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-022017.log
+flywheel	910bd04097d228ca2bb83511f78f4fedc2b1cffe	0	2 generations; 1 internal promotion; replay pass; authority none	/home/ruv/.ruos/activity/2026-10-06/run-export-path-home-ruv-local-share-dream-machi-022018.log
