@@ -8,7 +8,7 @@ license.workspace = true
 [dependencies]
 serde.workspace = true
 serde_json.workspace = true
-toolrecall-domain = { path = "../toolrecall-domain" }
+toolrecall-domain = { version = "0.1.0", path = "../toolrecall-domain" }
 
 [[bin]]
 name = "toolrecall-benchmark"

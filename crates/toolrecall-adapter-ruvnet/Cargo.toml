@@ -11,8 +11,8 @@ hex.workspace = true
 ruvector-core.workspace = true
 rvf-crypto.workspace = true
 serde_json.workspace = true
-toolrecall-application = { path = "../toolrecall-application" }
-toolrecall-domain = { path = "../toolrecall-domain" }
+toolrecall-application = { version = "0.1.0", path = "../toolrecall-application" }
+toolrecall-domain = { version = "0.1.0", path = "../toolrecall-domain" }
 
 [dev-dependencies]
 tempfile.workspace = true

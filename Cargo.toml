@@ -38,11 +38,11 @@ anyhow.workspace = true
 clap.workspace = true
 serde_json.workspace = true
 tokio.workspace = true
-toolrecall-adapter-mcp = { path = "crates/toolrecall-adapter-mcp" }
-toolrecall-adapter-openai = { path = "crates/toolrecall-adapter-openai" }
-toolrecall-adapter-ruvnet = { path = "crates/toolrecall-adapter-ruvnet" }
-toolrecall-application = { path = "crates/toolrecall-application" }
-toolrecall-domain = { path = "crates/toolrecall-domain" }
+toolrecall-adapter-mcp = { version = "0.1.0", path = "crates/toolrecall-adapter-mcp" }
+toolrecall-adapter-openai = { version = "0.1.0", path = "crates/toolrecall-adapter-openai" }
+toolrecall-adapter-ruvnet = { version = "0.1.0", path = "crates/toolrecall-adapter-ruvnet" }
+toolrecall-application = { version = "0.1.0", path = "crates/toolrecall-application" }
+toolrecall-domain = { version = "0.1.0", path = "crates/toolrecall-domain" }
 
 [[bin]]
 name = "toolrecall"
