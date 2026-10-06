@@ -22,12 +22,15 @@ Two independent streams were rerun: frontier primary research published or revis
 
 | Project | Material date | Pinned revision/package | Inspected interface | License |
 |---|---:|---|---|---|
-| OpenAI Agents SDK | 2026-09 tool-search material | `openai-agents 0.3.3`; repo `d7e52c375021248973f60ccbea8e7b69bc5b16e3` | `function_tool(defer_loading=True)`, tool search example | MIT |
-| MCP Rust SDK | 2026-09-15 release 3.4.0 | repo `79437f291b2c44053d00dcd5db969fd0cca7c887` | `rmcp::model::Tool::new` | Apache-2.0 for current contributions; repository history includes MIT transition notice |
+| OpenAI Agents SDK | 2026-10-05 repository update | `openai-agents 0.23.1`; repo `d7e52c375021248973f60ccbea8e7b69bc5b16e3` | `function_tool(defer_loading=True)`, tool search example | MIT |
+| MCP Rust SDK | 2026-10-05 release 3.5.1 source; compatible crate pinned at 3.4.0 | repo `79437f291b2c44053d00dcd5db969fd0cca7c887` | `rmcp::model::Tool::new` | Apache-2.0 for current contributions; repository history includes MIT transition notice |
+| NVIDIA Skills | 2026-10-02 catalog regeneration | repo `0e0d506f4eb67204a62586ac5f19df3cb7ad9b1f` | live-catalog router and capability-discovery contract | CC-BY-4.0 AND Apache-2.0 |
 | RuVector | inspected 2026-10-05 | `5a93328f2fceb0307c25929ed38cd7a0911fdf00`, crate `2.3.1` | `VectorDB`, insert/search/get | Apache-2.0 |
 | MetaHarness | inspected 2026-10-05 | `9ce8b8dd89045c3b9a1f809ae58f3589029db4a4`; Darwin `0.10.3`, Flywheel `0.1.12` | bounded candidate CLI; replay bundle APIs | Apache-2.0 |
 
 The OpenAI integration is a justified Python sidecar because the maintained SDK is Python. The MCP, RuVector, and RVF boundaries use real Rust crates. No dependency is present solely for branding.
+
+NVIDIA Skills was inspected as part of the independent enterprise radar, not integrated into ToolRecall: its live-catalog routing is adjacent prior art, but adding it would not strengthen the selected vertical slice.
 
 ## Ranked composition matrix
 
