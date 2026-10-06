@@ -9,7 +9,7 @@ use toolrecall_domain::{QueryCase, RecallPolicy, SelectionReceipt, ToolDescripto
 pub trait WitnessPort: Send + Sync { fn seal(&self, payloads:&[Vec<u8>])->Result<String,String>; }
 
 #[derive(Debug, Serialize, Deserialize)] pub struct WorkflowReceipt { pub selection:SelectionReceipt, pub similar_outcomes:Vec<String>, pub witness_root:String, pub authority:String }
-pub async fn run(C:CatalogPort,E:EvidencePort,W:WitnessPort>(catalog:&C,evidence:&E,witness:&W,q:&QueryCase,p:&RecallPolicy)->Result<WorkflowReceipt,AppError>{
+pub async fn run<C: CatalogPort, E: EvidencePort, W: WitnessPort>(catalog:&C,evidence:&E,witness:&W,q:&QueryCase,p:&RecallPolicy)->Result<WorkflowReceipt,AppError>{
     let tools=catalog.load().await.map_err(AppError::Catalog)?; let selection=select(q,&tools,p)?;
     let similar_outcomes=evidence.append_and_search(&selection).await.map_err(AppError::Memory)?;
     let witness_root=witness.seal(&[serde_json::to_vec(q).expect("serializable"),serde_json::to_vec(&selection).expect("serializable")]).map_err(AppError::Witness)?;
