@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="260" viewBox="0 0 980 260" role="img" aria-labelledby="title desc">
+  <title id="title">ToolRecall source-aware tool retrieval</title>
+  <desc id="desc">Deferred tools pass through source-aware recall, MCP validation, RuVector storage and RVF evidence.</desc>
+  <rect width="980" height="260" rx="24" fill="#0b1020"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="490" y="42" fill="#f8fafc" font-size="26" font-weight="700">ToolRecall</text>
+    <g fill="#151d34" stroke="#5eead4" stroke-width="2">
+      <rect x="35" y="90" width="165" height="90" rx="14"/>
+      <rect x="225" y="90" width="165" height="90" rx="14"/>
+      <rect x="415" y="90" width="165" height="90" rx="14"/>
+      <rect x="605" y="90" width="165" height="90" rx="14"/>
+      <rect x="795" y="90" width="150" height="90" rx="14"/>
+    </g>
+    <g fill="#e2e8f0" font-size="17" font-weight="600">
+      <text x="117" y="128">Deferred tools</text><text x="117" y="153" font-size="13">OpenAI SDK</text>
+      <text x="307" y="128">Source guard</text><text x="307" y="153" font-size="13">deterministic</text>
+      <text x="497" y="128">Tool schema</text><text x="497" y="153" font-size="13">MCP Rust SDK</text>
+      <text x="687" y="128">Outcome memory</text><text x="687" y="153" font-size="13">RuVector</text>
+      <text x="870" y="128">Witness</text><text x="870" y="153" font-size="13">RVF</text>
+    </g>
+    <g stroke="#a78bfa" stroke-width="4" fill="none"><path d="M200 135h25"/><path d="M390 135h25"/><path d="M580 135h25"/><path d="M770 135h25"/></g>
+    <text x="490" y="225" fill="#94a3b8" font-size="14">Advisory receipts • frozen policies • append-only evidence • no execution authority</text>
+  </g>
+</svg>
