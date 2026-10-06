@@ -30,9 +30,9 @@ A global top-k tool search can look accurate while collapsing one entire source.
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install openai-agents==0.3.3
+.venv/bin/pip install openai-agents==0.23.1
 cargo run --locked -- --query "has invoice 77 been paid" --required-source billing --required-tool get_invoice_status --python .venv/bin/python
-cargo run --locked -p toolrecall-evaluation -- --json
+cargo run --locked -p toolrecall-evaluation --bin toolrecall-benchmark -- --json
 ```
 
 Example output contains `selected`, `missing_sources`, `catalog_digest`, `memory_readback`, and `rvf_witness`. The process exits non-zero for invalid policies, malformed sidecar data, timeouts, failed MCP validation, or failed evidence persistence.
@@ -62,7 +62,7 @@ Example output contains `selected`, `missing_sources`, `catalog_digest`, `memory
 
 | Ingredient | Pinned interface | Executed role |
 |---|---|---|
-| OpenAI Agents SDK | `openai-agents==0.3.3` | materialize deferred function tools |
+| OpenAI Agents SDK | `openai-agents==0.23.1` | materialize deferred function tools |
 | MCP Rust SDK | `rmcp 3.4.0` | schema/name validation |
 | RuVector | `ruvector-core 2.3.1` | append/readback outcome vectors |
 | RVF | `rvf-crypto 0.2.0` | witness-chain decision evidence |
