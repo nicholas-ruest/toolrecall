@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.rust-lang.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" width="42" alt="Rust"></a>&nbsp;
-  <a href="https://openai.github.io/openai-agents-python/"><img src="https://cdn.simpleicons.org/openai/000000" width="42" alt="OpenAI Agents SDK"></a>&nbsp;
+  <a href="https://openai.github.io/openai-agents-python/"><img src="https://avatars.githubusercontent.com/u/14957082?s=200&amp;v=4" width="42" alt="OpenAI Agents SDK"></a>&nbsp;
   <a href="https://modelcontextprotocol.io/"><img src="https://avatars.githubusercontent.com/u/182288589?s=200&v=4" width="42" alt="Model Context Protocol"></a>&nbsp;
   <a href="https://github.com/ruvnet/ruvector"><img src="https://avatars.githubusercontent.com/u/2934394?s=200&v=4" width="42" alt="RuVector and RVF"></a>&nbsp;
   <a href="https://github.com/ruvnet/metaharness"><img src="https://cdn.simpleicons.org/githubactions/2088FF" width="42" alt="MetaHarness evaluation"></a>
