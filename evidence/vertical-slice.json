@@ -1,0 +1,13 @@
+{
+  "commit": "910bd04097d228ca2bb83511f78f4fedc2b1cffe",
+  "openaiAgentsVersion": "0.23.1",
+  "deferredToolCount": 8,
+  "selected": ["billing/get_invoice_status", "billing/issue_refund"],
+  "missingSources": [],
+  "missingTools": [],
+  "catalogSha256": "5a29e9c1704d38577368f86844d5d1e8d4f5c227f3c1abcbe48a0b974ad054b1",
+  "ruvectorReadback": [],
+  "rvfWitnessRoot": "0db3522ac5aad2dff0ea711c00981aec0b98ed005e7c68a9f6323796ec133cc1",
+  "authority": "none",
+  "exitCode": 0
+}

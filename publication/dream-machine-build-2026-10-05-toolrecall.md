@@ -11,11 +11,14 @@ cargo fmt --all -- --check
 cargo clippy --workspace --all-targets --all-features --locked -- -D warnings
 cargo test --workspace --all-targets --all-features --locked
 cargo deny check
-cargo run --locked -p toolrecall-evaluation
+cargo run --locked -p toolrecall-evaluation --bin toolrecall-benchmark -- --json
 ```
 
-Repository: https://github.com/nicholas-ruest/toolrecall
+Repository: https://github.com/nicholas-ruest/toolrecall  
+Validated source commit: `910bd04097d228ca2bb83511f78f4fedc2b1cffe`
 
-Limitations: lexical corpus, no live model call, no production deployment, human approval required for graduation. Exact commit and measurements must be filled from the merged validation receipt before public posting.
+Results: four Rust tests passed; source-aware coverage was 1.000 with 2.167 tools loaded on average, versus 0.667/1.000 for global top-k and 1.000/8.000 for full catalog. Darwin selected `top_k=1,max_loaded=2` at 0.9600 versus the 0.9567 baseline. Flywheel replay verified every receipt/authenticity check with `authority: none`.
+
+Limitations: lexical corpus, no live model call, no production deployment, implementation PR not merged, and human approval required for graduation.
 
 This file is publication-ready but is not evidence of Gist publication until a public Gist owned by `nicholas-ruest` is read back.
