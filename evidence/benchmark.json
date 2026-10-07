@@ -1,0 +1,11 @@
+{
+  "commit": "910bd04097d228ca2bb83511f78f4fedc2b1cffe",
+  "dataset": "frozen built-in six-case corpus",
+  "seed": 20261005,
+  "results": [
+    {"strategy":"global_top_k","coverage":0.6666666666666666,"avg_loaded":1.0,"authority":"none"},
+    {"strategy":"source_guard","coverage":1.0,"avg_loaded":2.1666666666666665,"authority":"none"},
+    {"strategy":"full_catalog","coverage":1.0,"avg_loaded":8.0,"authority":"none"}
+  ],
+  "claimBoundary": "mechanism evidence only; not a production performance claim"
+}

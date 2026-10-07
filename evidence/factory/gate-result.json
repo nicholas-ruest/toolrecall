@@ -1,0 +1,14 @@
+{
+  "status": "PARTIAL_FAILURE",
+  "failures": ["gist:research", "gist:build"],
+  "caveat": "Receipt consistency is not independent proof of live execution or publication.",
+  "gateSource": {
+    "repository": "nicholas-ruest/ruvnet-dream-machine",
+    "commit": "7b81d5ea2561d618b9142cc05bf850e9fcd1380f",
+    "path": "scripts/factory-gate.mjs",
+    "blob": "8b3c7eda7868e153cd6fdd65c6d52d375ddd0236"
+  },
+  "executedAtSourceCommit": "910bd04097d228ca2bb83511f78f4fedc2b1cffe",
+  "exitCode": 1,
+  "interpretation": "The gate found no consistency failures other than the two required public Gists. Exit 1 is therefore expected and preserves truthful PARTIAL_FAILURE status."
+}
