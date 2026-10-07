@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "toolrecall.ci-recovery.v1",
+  "date": "2026-10-06",
+  "sourceCommit": "317d8c56937bd089f79f24c1af6979f653d478e4",
+  "workflow": {
+    "runId": 37557413576,
+    "url": "https://github.com/nicholas-ruest/toolrecall/actions/runs/37557413576",
+    "conclusion": "success",
+    "stages": [
+      "checkout exact source",
+      "install Rust 1.99.0",
+      "install openai-agents 0.23.1",
+      "install cargo-deny 0.20.2",
+      "cargo fmt --all -- --check",
+      "cargo clippy --workspace --all-targets --all-features --locked -- -D warnings",
+      "cargo test --workspace --all-targets --all-features --locked",
+      "cargo deny check",
+      "OpenAI to MCP to RuVector to RVF vertical slice",
+      "frozen benchmark"
+    ]
+  },
+  "executor": {
+    "machine": "8ee959f7363638",
+    "completionVerified": true,
+    "commands": [
+      {
+        "stage": "fmt-clippy-test-deny",
+        "exitCode": 0,
+        "transcript": "/home/ruv/.ruos/activity/2026-10-07/run-export-path-home-ruv-local-share-dream-machi-013031.log"
+      },
+      {
+        "stage": "integration-first-attempt",
+        "exitCode": 127,
+        "result": "COMMAND_FAILED: obsolete interpreter path; no integration code executed",
+        "transcript": "/home/ruv/.ruos/activity/2026-10-07/run-export-path-home-ruv-local-share-dream-machi-013108.log"
+      },
+      {
+        "stage": "integration-and-benchmark-rerun",
+        "exitCode": 0,
+        "pythonPackage": "openai-agents 0.23.1",
+        "transcript": "/home/ruv/.ruos/activity/2026-10-07/run-export-path-home-ruv-local-share-dream-machi-013131.log"
+      },
+      {
+        "stage": "darwin-and-flywheel",
+        "exitCode": 0,
+        "result": "Darwin 0.9600 vs 0.9567 baseline; Flywheel replay pass; authority none",
+        "transcript": "/home/ruv/.ruos/activity/2026-10-07/run-export-path-home-ruv-local-share-dream-machi-013236.log"
+      }
+    ]
+  },
+  "authority": "none",
+  "claimBoundary": "CI and executor evidence only; does not prove Gist publication or graduation."
+}
