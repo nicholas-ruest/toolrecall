@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - dream/2026-10-05-architecture
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Rust, integrations, and evidence
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CARGO_TERM_COLOR: always
+      RUST_BACKTRACE: "1"
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.99.0 --profile minimal --component rustfmt --component clippy
+
+      - name: Install pinned Python integration
+        run: |
+          python3 --version
+          python3 -m pip install --disable-pip-version-check openai-agents==0.23.1
+
+      - name: Install dependency policy checker
+        run: cargo install cargo-deny --version 0.20.2 --locked
+
+      - name: Formatting
+        run: cargo fmt --all -- --check
+
+      - name: Strict Clippy
+        run: cargo clippy --workspace --all-targets --all-features --locked -- -D warnings
+
+      - name: Locked workspace tests
+        run: cargo test --workspace --all-targets --all-features --locked
+
+      - name: Dependency, license, and source policy
+        run: cargo deny check
+
+      - name: OpenAI to MCP to RuVector to RVF vertical slice
+        run: |
+          cargo run --locked --             --query "has invoice 77 been paid"             --required-source billing             --required-tool get_invoice_status             --python python3
+
+      - name: Frozen benchmark
+        run: cargo run --locked -p toolrecall-evaluation --bin toolrecall-benchmark -- --json
