@@ -6,8 +6,8 @@ The complete candidate comparison, pinned revisions, licenses, rejected alternat
 
 Selected composition: OpenAI Agents SDK deferred tools + official MCP Rust SDK validation + RuVector outcome memory + RVF witnesses + MetaHarness Darwin/Flywheel evaluation. The system is advisory and grants no tool execution authority.
 
-Repository: https://github.com/nicholas-ruest/toolrecall
+Repository: https://github.com/nicholas-ruest/toolrecall  
+Merged build snapshot: `f50d612fe375d317f84a7ef1c7ae22ebced72f77`  
+Exact-main CI: https://github.com/nicholas-ruest/toolrecall/actions/runs/37559009063
 
-Validated source commit: `317d8c56937bd089f79f24c1af6979f653d478e4`; GitHub CI run: `37557413576`. Publication remains a partial failure until this file and the build announcement are read back from public Gists owned by `nicholas-ruest`.
-
-This file is publication-ready but is not evidence of Gist publication until a public Gist owned by `nicholas-ruest` is read back.
+Publication remains a partial failure until this file and the build announcement are read back from public Gists owned by `nicholas-ruest`. This repository file is a publication-ready draft, not evidence of Gist publication.
