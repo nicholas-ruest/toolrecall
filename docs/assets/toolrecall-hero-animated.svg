@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">ToolRecall source-aware recall firewall</title>
+  <desc id="desc">A deferred tool catalog flows through a source coverage gate, MCP validation, RuVector memory, and an RVF evidence seal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07152f"/><stop offset="1" stop-color="#102849"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#62d9ff" stop-opacity="0"/><stop offset=".5" stop-color="#62d9ff"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+    <style>
+      .label{font:600 16px system-ui,-apple-system,Segoe UI,sans-serif;fill:#eaf4ff;letter-spacing:.02em}
+      .small{font:500 13px system-ui,-apple-system,Segoe UI,sans-serif;fill:#9fc4df}
+      .pulse{animation:pulse 3.6s ease-in-out infinite;transform-origin:center}
+      .packet{animation:travel 5.4s linear infinite}
+      .packet.two{animation-delay:-1.8s}.packet.three{animation-delay:-3.6s}
+      @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+      @keyframes travel{0%{transform:translateX(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateX(640px);opacity:0}}
+      @media (prefers-reduced-motion:reduce){.pulse,.packet{animation:none}.packet{opacity:.75;transform:translateX(320px)}}
+    </style>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="1040" cy="82" r="140" fill="#5eead4" opacity=".06"/>
+  <circle cx="120" cy="350" r="170" fill="#8b5cf6" opacity=".06"/>
+  <text x="64" y="82" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="46" font-weight="750" fill="#f7fbff">ToolRecall</text>
+  <text x="64" y="116" class="small">Source-aware tool recall with inspectable evidence</text>
+  <g transform="translate(70 178)">
+    <rect width="210" height="126" rx="18" fill="#0d3155" stroke="#3b82f6" stroke-width="2"/>
+    <text x="105" y="48" text-anchor="middle" class="label">Deferred catalog</text>
+    <text x="105" y="78" text-anchor="middle" class="small">OpenAI tools</text>
+    <text x="105" y="99" text-anchor="middle" class="small">multiple sources</text>
+  </g>
+  <g transform="translate(364 178)">
+    <rect width="220" height="126" rx="18" fill="#112f4d" stroke="#5eead4" stroke-width="2"/>
+    <rect x="14" y="14" width="192" height="98" rx="13" fill="none" stroke="#5eead4" opacity=".25" class="pulse"/>
+    <text x="110" y="48" text-anchor="middle" class="label">Source gate</text>
+    <text x="110" y="78" text-anchor="middle" class="small">coverage obligation</text>
+    <text x="110" y="99" text-anchor="middle" class="small">typed policy</text>
+  </g>
+  <g transform="translate(668 178)">
+    <rect width="210" height="126" rx="18" fill="#172d50" stroke="#a78bfa" stroke-width="2"/>
+    <text x="105" y="48" text-anchor="middle" class="label">MCP validation</text>
+    <text x="105" y="78" text-anchor="middle" class="small">schema + names</text>
+    <text x="105" y="99" text-anchor="middle" class="small">fail closed</text>
+  </g>
+  <g transform="translate(962 178)">
+    <rect width="168" height="126" rx="18" fill="#21304d" stroke="#f59e0b" stroke-width="2"/>
+    <text x="84" y="42" text-anchor="middle" class="label">Evidence</text>
+    <text x="84" y="72" text-anchor="middle" class="small">RuVector</text>
+    <text x="84" y="94" text-anchor="middle" class="small">RVF witness</text>
+  </g>
+  <path d="M280 241H962" stroke="#4f7193" stroke-width="4" stroke-linecap="round"/>
+  <rect x="286" y="237" width="96" height="8" rx="4" fill="url(#beam)" filter="url(#glow)" class="packet"/>
+  <rect x="286" y="237" width="96" height="8" rx="4" fill="url(#beam)" class="packet two"/>
+  <rect x="286" y="237" width="96" height="8" rx="4" fill="url(#beam)" class="packet three"/>
+  <g transform="translate(70 350)">
+    <circle cx="8" cy="-4" r="6" fill="#5eead4"/><text x="24" y="1" class="small">Static labels remain readable when animation is unavailable</text>
+    <text x="1050" y="1" text-anchor="end" class="small">authority: none</text>
+  </g>
+</svg>
