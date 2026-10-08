@@ -79,7 +79,7 @@ Darwin selected `top_k=1,max_loaded=2` at `0.9600`, versus a `0.9567` baseline. 
 | validation evidence | `dream/2026-10-05-validation` / [PR #3](https://github.com/nicholas-ruest/toolrecall/pull/3) | `6412124ea2323c66eab0ac790de6848b1319f2b8` |
 | implementation and integrations | `dream/2026-10-05-implementation` / [PR #2](https://github.com/nicholas-ruest/toolrecall/pull/2) | `f50d612fe375d317f84a7ef1c7ae22ebced72f77` |
 | final readback | `dream/2026-10-06-final-readback` / [PR #4](https://github.com/nicholas-ruest/toolrecall/pull/4) | `44122bfb2fa1450a47393653b7f13979efba7c04` |
-| visual/publication recovery | `recovery/2026-10-07-publication-visuals` / [PR #5](https://github.com/nicholas-ruest/toolrecall/pull/5) | visual source `2cabbcda38c64e8954b4ef4fc5f253758a93be7c`; merge receipt pending |
+| visual/publication recovery | `recovery/2026-10-07-publication-visuals` / [PR #5](https://github.com/nicholas-ruest/toolrecall/pull/5) | `6dd25252877d575de6355b3dbe7c21c1d28f2853` |
 
 ## README visual recovery
 
