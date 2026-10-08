@@ -12,9 +12,9 @@ ToolRecall is an experimental research build. It is not deployed and no crate is
 - Darwin/Flywheel evaluation: bounded advisory execution only; `authority: none`.
 - Repository: public, with `main` as the default branch.
 
-## Recovery in progress
+## Recovery delivered
 
-- README visual recovery: [PR #5](https://github.com/nicholas-ruest/toolrecall/pull/5) replaces remote avatar stand-ins with versioned assets, adds two custom animated/static-readable SVGs, adds reduced-motion behavior and attribution, and strengthens navigation/evidence traceability.
+- README and publication recovery: [PR #5](https://github.com/nicholas-ruest/toolrecall/pull/5) merged at `6dd25252877d575de6355b3dbe7c21c1d28f2853`. It replaced remote avatar stand-ins with versioned assets, added two custom animated/static-readable SVGs, added reduced-motion behavior and attribution, strengthened navigation/evidence traceability, and expanded both dated publication reports.
 - Applied guidance: [`docs/applied-guidance-2026-10-07.md`](docs/applied-guidance-2026-10-07.md) records how the current core-memory engineering profile was applied and revisited.
 - Publication drafts: the dated research and build files are complete and self-contained under [`publication/`](publication/).
 - Public Gists: **BLOCKED_GIST_PUBLISH**. The GitHub repository connector exposes no Gist action and RuOS `gh auth status` is logged out. The authenticated browser proves ownership and shows no duplicate ToolRecall Gists, but browser publication is a representational post that cannot be submitted unattended under the active computer-use confirmation policy.
@@ -23,7 +23,7 @@ ToolRecall is an experimental research build. It is not deployed and no crate is
 
 - IMPLEMENTED: yes, at `f50d612fe375d317f84a7ef1c7ae22ebced72f77`.
 - VALIDATED: yes, with immutable exact-main CI and committed evaluator evidence.
-- REPO_PUBLISHED: yes; PR #5 is a separate recovery increment until merged.
+- REPO_PUBLISHED: yes; recovery PR #5 is merged at `6dd25252877d575de6355b3dbe7c21c1d28f2853`.
 - RESEARCH_GIST: no — publication-ready, not published/read back.
 - BUILD_GIST: no — publication-ready, not published/read back.
 - BUILT: no under the factory completion gate because both dated public Gists are missing.
